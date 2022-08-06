@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+
+.card section {
+    padding: 3rem;
+}
+
+.sedans_container {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs_container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury_container {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.94rem;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.5rem;
+    max-width: 25ch;
+}
+
+button {
+    white-space: nowrap;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border-style: solid;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding-block: 0.8rem;
+    padding-inline: 1.75rem;
+    margin-top: 0.75rem;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.btn_sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn_suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn_luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .card {
+        flex-direction: row;
+        align-items: stretch;
+        min-height: 31.5rem;
+    }
+
+    .card section {
+        position: relative;
+    }
+
+    .sedans_container {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury_container {
+        border-radius: 0 10px 10px 0;
+    }
+
+    p {
+        max-width: 23ch;
+    }
+
+    button {
+        position: absolute;
+        bottom: 3rem;
+    }
+}
+
+@media only screen and (min-height: 500px) {
+    body {
+        min-height: 100vh;
+    }
+}
